@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2a2f42"
+    android:layout_height="match_parent"
+    tools:context="com.proxima.colorpixor.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#565F7E"
+            android:layout_margin="10dp"
+            android:textColor="#D4DFE2"
+            android:inputType="number"
+            android:background="@drawable/border"
+            android:hint="Enter Number of colors you want"
+            android:id="@+id/edtNumber"/>
+
+        <Button
+            android:id="@+id/buttonChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="Choose Image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="OR"
+            android:textColor="#D4DFE2"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#565F7E"
+            android:layout_margin="10dp"
+            android:textColor="#D4DFE2"
+            android:background="@drawable/border"
+            android:hint="Enter Url of the image"
+            android:id="@+id/edtUrl"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:id="@+id/btnUrlImage"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button"
+            android:text="Get Image from URL"/>
+        <Button
+            android:id="@+id/buttonUploadImage"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Extract colors" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+
+        <ScrollView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:scrollbars="none"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/imageLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"
+                        android:visibility="invisible"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="0dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
